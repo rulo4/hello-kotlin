@@ -15,3 +15,8 @@ fun dayOfweek() {
     }
     println(dayOfweekName)
 }
+
+
+fun greeting(hour: Int): String {
+    return "Good ${when (hour) {in 0..11 -> "morning" else -> "afternoon"}} from Kotlin"
+}
